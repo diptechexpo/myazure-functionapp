@@ -11,8 +11,7 @@ module.exports = async function (context, req) {
         if (!name || !sport) {
           
             context.res = {
-                status: 400,
-                message: 'Mandatory input parameters missing. Please supply and retry.'
+                status: 403,
             };
             return;
         }
