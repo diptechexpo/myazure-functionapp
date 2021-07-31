@@ -12,7 +12,7 @@ module.exports = async function (context, req) {
           
             context.res = {
                 status: 400,
-                message: 'Input parameters missing'
+                message: 'Mandatory input parameters missing'
             };
             return;
         }
